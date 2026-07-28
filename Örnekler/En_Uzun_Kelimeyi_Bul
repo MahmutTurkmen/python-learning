@@ -1,0 +1,11 @@
+Python'da en uzun kelimeyi ve harf sayısını bulan kod
+girdi= list(map(str, input("Boşluklarla ayrılmış kelimeler girin: ").split())) 
+if len(girdi) == 0: 
+    print("Liste boş") 
+else: 
+    max_kelime= girdi[0] 
+    for i in girdi: 
+        if len(i) > len(max_kelime): 
+            max_kelime= i 
+    print("En uzun kelime: ", max_kelime) 
+    print("Harf sayısı: ", len(max_kelime))
