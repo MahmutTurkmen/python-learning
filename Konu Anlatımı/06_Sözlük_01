@@ -1,0 +1,35 @@
+# Python'da Sözlükler (Dictionary)
+# Python'da sözlükler (dictionary), anahtar (key) ve değer (value)
+# çiftlerinden oluşan bir veri yapısıdır.
+# Her anahtar benzersizdir ve kendisine ait bir değeri temsil eder.
+
+# Sözlük oluşturma 
+ogrenci = {
+    "isim": "Mahmut",
+    "yas": 21,
+    "bolum": "Bilgisayar Mühendisliği"
+}
+
+# Sözlüğü ekrana yazdırma
+print("Öğrenci bilgileri: ", ogrenci)
+
+# Anahtar ile değere erişme 
+print("İsim: ", ogrenci["isim"])
+
+# Sözlüğe yeni eleman ekleme
+ogrenci["sehir"]= "Afyonkarahisar"
+print("Şehir eklendikten sonra: ", ogrenci)
+
+# Değer güncelleme
+ogrenci["yas"]= 22
+print("Yaş güncellendikten sonra: ", ogrenci)
+
+# Sözlükten eleman silme
+del ogrenci["bolum"]
+print("Bölüm silindikten sonra: ", ogrenci)
+
+# Anahtarları listeleme
+print("Anahtarlar: ", ogrenci.keys())
+
+# Değerleri listeleme
+print("Değerler: ", ogrenci.values())
